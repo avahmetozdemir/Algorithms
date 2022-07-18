@@ -17,6 +17,4 @@ function insertionSort(arr) {
 
 let arr = [ 5 , 12, 1, 26, 4, 11]
 
-const newArr  = insertionSort(arr)
-
-console.log(newArr)
+console.log(insertionSort(arr))
