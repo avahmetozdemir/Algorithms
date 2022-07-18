@@ -42,5 +42,7 @@ This really comes in handy when we want to add more elements in an already sorte
 | --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
 | **Insertion sort**    | n               | n<sup>2</sup>       | n<sup>2</sup>       | 1         | Yes       |           |
 
+## References
+
 [stackabuse](https://stackabuse.com/selection-sort-in-javascript/)
 >>>>>>> 52466fe5752b687c3d3b2736906b382d7f6d30e0
