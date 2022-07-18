@@ -1,7 +1,5 @@
 # Algorithms
 
-<<<<<<< HEAD
-=======
 ## Seleciton Sort
 
 This algorithm divides the input array into two sublists - a sorted and unsorted sublist. The sorted list is located at the start of the collection, and all elements to the right of the final sorted element are considered unsorted.
@@ -45,4 +43,3 @@ This really comes in handy when we want to add more elements in an already sorte
 ## References
 
 [stackabuse](https://stackabuse.com/selection-sort-in-javascript/)
->>>>>>> 52466fe5752b687c3d3b2736906b382d7f6d30e0
