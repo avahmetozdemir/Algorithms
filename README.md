@@ -205,3 +205,39 @@ zero.
 - [Wikipedia](https://en.wikipedia.org/wiki/Counting_sort)
 - [YouTube](https://www.youtube.com/watch?v=OKd534EWcdk&index=61&t=0s&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
 - [EfficientAlgorithms](https://efficientalgorithms.blogspot.com/2016/09/lenear-sorting-counting-sort.html)
+
+# Heap Sort
+
+Heap Sort is an in-place, non-stable, comparison-based sorting algorithm.
+
+It does not require auxiliary data structures - it sorts the data in place and affects the original data (in-place). It doesn't preserve the relative order or equal elements. If you have two elements with the same value in an unsorted collection, their relative order might be changed (or stay the same) in the sorted collection (non-stable). Finally, the elements are compared to each other to find their order (comparison-based).
+
+Although Heap Sort is in-place (doesn't require an auxillary data structure), to make the implementation a bit clear, we will recruit an additional array during sorting.
+
+The mechanism underlying Heap Sort is fairly simple and some even call it "Improved Selection Sort".
+
+It starts by converting the unsorted array into a heap - either a max-heap or min-heap. In the case of a max-heap, each parent holds a greater value than its descendants, making the root element the largest among the heap and vice versa.
+
+Heap Sort relies on this heap condition.
+
+At each iteration, the algorithm removes the root of the heap and pushes it into an empty array. After each removal, the heap restores itself, bubbling its second-largest (or second-smallest) element up to the root to preserve its heap condition. This process is also known as heapifying and you'll oftentimes see people refer to methods doing this as heapify.
+
+Heap Sort continues shifting the newly located root elements into the sorted array until there is none left.
+
+Using a max-heap in this manner will result in an array with elements in descending order. For the array to be in ascending order, one has to opt for a min-heap.
+
+This sort of self-sorting and selective removal is reminiscent of Selection Sort (sans the self-sorting part) hence the parallel people draw.
+
+![Algorithm Visualization](https://upload.wikimedia.org/wikipedia/commons/1/1b/Sorting_heapsort_anim.gif)
+
+![Algorithm Visualization](https://upload.wikimedia.org/wikipedia/commons/4/4d/Heapsort-example.gif)
+
+## Complexity
+
+| Name                  | Best            | Average             | Worst               | Memory    | Stable    | Comments  |
+| --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
+| **Heap sort**         | n&nbsp;log(n)   | n&nbsp;log(n)       | n&nbsp;log(n)       | 1         | No        |           |
+
+## References
+
+[stackabuse](https://stackabuse.com/heap-sort-in-javascript/)
