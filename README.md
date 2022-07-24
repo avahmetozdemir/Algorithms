@@ -138,7 +138,7 @@ return (i + 1)
 
 - [GeeksforGeeks](https://www.geeksforgeeks.org/quick-sort/)
 
-# Counting Sort
+## Counting Sort
 
 In computer science, **counting sort** is an algorithm for sorting 
 a collection of objects according to keys that are small integers; 
@@ -206,7 +206,7 @@ zero.
 - [YouTube](https://www.youtube.com/watch?v=OKd534EWcdk&index=61&t=0s&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
 - [EfficientAlgorithms](https://efficientalgorithms.blogspot.com/2016/09/lenear-sorting-counting-sort.html)
 
-# Heap Sort
+## Heap Sort
 
 Heap Sort is an in-place, non-stable, comparison-based sorting algorithm.
 
@@ -241,3 +241,36 @@ This sort of self-sorting and selective removal is reminiscent of Selection Sort
 ## References
 
 [stackabuse](https://stackabuse.com/heap-sort-in-javascript/)
+
+
+## Binary Search
+
+In computer science, binary search, also known as half-interval 
+search, logarithmic search, or binary chop, is a search algorithm 
+that finds the position of a target value within a sorted 
+array. Binary search compares the target value to the middle 
+element of the array; if they are unequal, the half in which 
+the target cannot lie is eliminated and the search continues 
+on the remaining half until it is successful. If the search 
+ends with the remaining half being empty, the target is not 
+in the array.
+
+![Binary Search](https://upload.wikimedia.org/wikipedia/commons/8/83/Binary_Search_Depiction.svg)
+
+Binary Search Algorithm: The basic steps to perform Binary Search are:
+
+- Begin with the mid element of the whole array as a search key.
+- If the value of the search key is equal to the item then return an index of the search key.
+- Or if the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half.
+- Otherwise, narrow it to the upper half.
+- Repeatedly check from the second point until the value is found or the interval is empty.
+
+## Complexity
+
+**Time Complexity**: `O(log(n))` - since we split search area by two for every
+next iteration.
+
+## References
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+- [GeeksforGeeks](https://www.geeksforgeeks.org/binary-search/)
