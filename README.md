@@ -34,13 +34,13 @@ A very useful property of Insertion Sort is the fact that it doesn't need to kno
 
 This really comes in handy when we want to add more elements in an already sorted array, because Insertion Sort will add the new elements in their proper places without resorting the entire collection.
 
-## Complexity
+### Complexity
 
 | Name                  | Best            | Average             | Worst               | Memory    | Stable    | Comments  |
 | --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
 | **Insertion sort**    | n               | n<sup>2</sup>       | n<sup>2</sup>       | 1         | Yes       |           |
 
-## References
+### References
 
 [stackabuse](https://stackabuse.com/selection-sort-in-javascript/)
 
@@ -59,13 +59,13 @@ The Merge Sort algorithm is a sorting algorithm that is considered as an example
 •    Continue till left is less than right
 •    Then call merge function to perform merge sort.
 
-## Complexity
+### Complexity
 
 | Name                  | Best            | Average             | Worst               | Memory    | Stable    | Comments  |
 | --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
 | **Merge sort**        | n&nbsp;log(n)   | n&nbsp;log(n)       | n&nbsp;log(n)       | n         | Yes       |           |
 
-## References
+### References
 
 - [GeeksforGeeks](https://www.geeksforgeeks.org/merge-sort/)
 
@@ -128,13 +128,13 @@ i++;    // increment index of smaller element
 return (i + 1)
 }
 
-## Complexity
+### Complexity
 
  Name                  | Best            | Average             | Worst               | Memory    | Stable    | Comments  |
 | --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
 | **Quick sort**        | n&nbsp;log(n)   | n&nbsp;log(n)       | n<sup>2</sup>       | log(n)    | No        |  Quicksort is usually done in-place with O(log(n)) stack space |
 
-## References
+### References
 
 - [GeeksforGeeks](https://www.geeksforgeeks.org/quick-sort/)
 
@@ -166,7 +166,7 @@ per bucket.
 Counting sorting works best when the range of numbers for each array
 element is very small.
 
-## Algorithm
+### Algorithm
 
 **Step I**
 
@@ -194,13 +194,13 @@ zero.
  
 ![Counting Sort](https://1.bp.blogspot.com/-xPqylngqASY/WLGq3p9n9vI/AAAAAAAAAHM/JHdtXAkJY8wYzDMBXxqarjmhpPhM0u8MACLcB/s1600/ResultArrayCS.gif)
 
-## Complexity
+### Complexity
 
 | Name                  | Best            | Average             | Worst               | Memory    | Stable    | Comments  |
 | --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
 | **Counting sort**     | n + r           | n + r               | n + r               | n + r     | Yes       | r - biggest number in array |
 
-## References
+### References
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Counting_sort)
 - [YouTube](https://www.youtube.com/watch?v=OKd534EWcdk&index=61&t=0s&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)
@@ -232,13 +232,13 @@ This sort of self-sorting and selective removal is reminiscent of Selection Sort
 
 ![Algorithm Visualization](https://upload.wikimedia.org/wikipedia/commons/4/4d/Heapsort-example.gif)
 
-## Complexity
+### Complexity
 
 | Name                  | Best            | Average             | Worst               | Memory    | Stable    | Comments  |
 | --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
 | **Heap sort**         | n&nbsp;log(n)   | n&nbsp;log(n)       | n&nbsp;log(n)       | 1         | No        |           |
 
-## References
+### References
 
 [stackabuse](https://stackabuse.com/heap-sort-in-javascript/)
 
@@ -265,12 +265,12 @@ Binary Search Algorithm: The basic steps to perform Binary Search are:
 - Otherwise, narrow it to the upper half.
 - Repeatedly check from the second point until the value is found or the interval is empty.
 
-## Complexity
+### Complexity
 
 **Time Complexity**: `O(log(n))` - since we split search area by two for every
 next iteration.
 
-## References
+### References
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Binary_search_algorithm)
 - [GeeksforGeeks](https://www.geeksforgeeks.org/binary-search/)
